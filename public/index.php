@@ -1,14 +1,22 @@
 <?php
 require_once '../includes/header.php';
 ?>
-
-<h1>Welcome to MediSeen</h1>
-<p>Your simple medicine information and symptom-based OTC recommendations.</p>
-<div style="padding: 20px; background: #e9ecef; border-radius: 8px; margin-top: 20px;">
-    <h3>Public Search (Anonymous)</h3>
-    <p>Anonymous lookup will be implemented in the next phase.</p>
-    <input type="text" placeholder="Search for a medicine or symptom..." disabled>
-    <p><small><em>Note: You can log in to access the Admin CRUD dashboard.</em></small></p>
+<div class="page-hero">
+    <h1 class="hero-title">Welcome to MediSeen</h1>
+    <p class="hero-subtitle">Your simple, anonymous medicine information and symptom-based OTC recommendations. No registration required to lookup.</p>
+    <div class="search-wrapper">
+        <input type="text" placeholder="Search for a medicine or symptom..." disabled class="search-input">
+        <p class="search-note">* Public lookup engine coming in Phase 3</p>
+    </div>
 </div>
-
+<div class="feature-grid">
+    <div class="feature-card">
+        <h3 class="feature-title" style="color: var(--trust-teal);">100% Anonymous</h3>
+        <p class="feature-text">Look up medicines without an account.</p>
+    </div>
+    <div class="feature-card">
+        <h3 class="feature-title" style="color: var(--trust-teal-light);">Secure Admin</h3>
+        <p class="feature-text">Curated by medical professionals.</p>
+    </div>
+</div>
 <?php require_once '../includes/footer.php'; ?>
